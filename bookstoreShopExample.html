@@ -33,6 +33,8 @@
         itemsInCart: ["The Great Gatsby"],
         handleClick(removeBook) {
           removeBook(this.itemsInCart);
+          this.itemsInCart = []; //what blair added to remove book from cart when i hit checkout
+          bookstore.displayBookstore(); //what blair added to remove book from cart when i hit checkout
         },
         displayCart(clickHandler) {
           const renderTarget = document.getElementById("cart");
