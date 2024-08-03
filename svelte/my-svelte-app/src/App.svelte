@@ -1,5 +1,6 @@
 <script>
   import TransitionTest from "./lib/TransitionTest.svelte";
+  import StockTicker from "./lib/StockTicker.svelte";
   let newPost = '';
   let posts = [];
   function addPost(){
@@ -18,7 +19,10 @@
     {/each}
   </div>
   <div>
-  <TransitionTest />
+    <TransitionTest />
+  </div>
+  <div>
+    <StockTicker />
   </div>
 </main>
 
